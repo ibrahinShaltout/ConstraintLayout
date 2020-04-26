@@ -47,7 +47,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints" />
+             />
 
         <TextView
             android:id="@+id/tv_kuwait"
@@ -59,7 +59,7 @@
             android:textSize="17sp"
             app:layout_constraintStart_toStartOf="@+id/tv_public_relation"
             app:layout_constraintTop_toBottomOf="@+id/tv_public_relation"
-            tools:ignore="MissingConstraints" />
+             />
 
         <TextView
             android:id="@+id/textView"
@@ -71,18 +71,17 @@
             android:textSize="17sp"
             app:layout_constraintStart_toStartOf="@+id/tv_public_relation"
             app:layout_constraintTop_toBottomOf="@+id/tv_kuwait"
-            tools:ignore="MissingConstraints" />
+             />
 
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/etisalat_logo"
             android:layout_width="100dp"
             android:layout_height="135dp"
-            android:layout_marginTop="15dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/etisalat"
             app:layout_constraintEnd_toEndOf="parent"
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintTop_toTopOf="parent" />
 
 
         <TextView
@@ -96,7 +95,7 @@
             app:layout_constraintEnd_toEndOf="@+id/etisalat_logo"
             app:layout_constraintStart_toStartOf="@+id/etisalat_logo"
             app:layout_constraintTop_toBottomOf="@+id/etisalat_logo"
-            tools:ignore="MissingConstraints" />
+             />
 
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/ic_favorite"
@@ -132,7 +131,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/appCompatImageButton"
             app:layout_constraintStart_toEndOf="@+id/appCompatImageButton"
             app:layout_constraintTop_toTopOf="@+id/ic_favorite"
-            tools:ignore="MissingConstraints" />
+             />
 
 
         <androidx.appcompat.widget.AppCompatButton
@@ -147,7 +146,7 @@
             app:layout_constraintEnd_toEndOf="@+id/etisalat_logo"
             app:layout_constraintStart_toStartOf="@+id/etisalat_logo"
             app:layout_constraintTop_toTopOf="@+id/ic_favorite"
-            tools:ignore="MissingConstraints" />
+             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -179,7 +178,7 @@
             android:textSize="17sp"
             android:textStyle="bold"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints" />
+             />
 
 
         <TextView
@@ -192,7 +191,7 @@
             android:textSize="17sp"
             app:layout_constraintStart_toStartOf="@+id/tx_Job_Details"
             app:layout_constraintTop_toBottomOf="@+id/tx_Job_Details"
-            tools:ignore="MissingConstraints" />
+             />
 
         <TextView
             android:id="@+id/tx_Years_of_Experience_result"
@@ -205,7 +204,7 @@
             android:textSize="17sp"
             app:layout_constraintStart_toEndOf="@+id/tx_Years_of_Experience"
             app:layout_constraintTop_toTopOf="@+id/tx_Years_of_Experience"
-            tools:ignore="MissingConstraints" />
+             />
 
 
         <TextView
@@ -218,7 +217,7 @@
             android:textSize="17sp"
             app:layout_constraintStart_toStartOf="@+id/tx_Job_Details"
             app:layout_constraintTop_toBottomOf="@+id/tx_Years_of_Experience"
-            tools:ignore="MissingConstraints" />
+             />
 
         <TextView
             android:id="@+id/tx_Salary_result"
@@ -229,7 +228,7 @@
             android:textSize="17sp"
             app:layout_constraintStart_toStartOf="@+id/tx_Years_of_Experience_result"
             app:layout_constraintTop_toTopOf="@+id/tx_Salary"
-            tools:ignore="MissingConstraints" />
+             />
 
         <TextView
             android:id="@+id/tx_Employment_Type"
@@ -241,7 +240,7 @@
             android:textSize="17sp"
             app:layout_constraintStart_toStartOf="@+id/tx_Job_Details"
             app:layout_constraintTop_toBottomOf="@+id/tx_Salary"
-            tools:ignore="MissingConstraints" />
+             />
 
         <TextView
             android:layout_width="wrap_content"
@@ -251,7 +250,7 @@
             android:textSize="17sp"
             app:layout_constraintStart_toStartOf="@+id/tx_Salary_result"
             app:layout_constraintTop_toTopOf="@+id/tx_Employment_Type"
-            tools:ignore="MissingConstraints" />
+             />
 
         <TextView
             android:id="@+id/tx_Job_description"
@@ -264,7 +263,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/tx_Job_Details"
             app:layout_constraintTop_toBottomOf="@+id/tx_Employment_Type"
-            tools:ignore="MissingConstraints" />
+             />
 
 
         <TextView
@@ -277,7 +276,7 @@
             android:textSize="17sp"
             app:layout_constraintStart_toStartOf="@+id/tx_Job_Details"
             app:layout_constraintTop_toBottomOf="@+id/tx_Job_description"
-            tools:ignore="MissingConstraints" />
+             />
 
 
         <TextView
@@ -291,7 +290,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/tx_Job_Details"
             app:layout_constraintTop_toBottomOf="@+id/tx_Public_Relation_Specialist"
-            tools:ignore="MissingConstraints" />
+             />
 
         <TextView
             android:id="@+id/tx_Public_Relation_Specialist_role"
@@ -309,7 +308,7 @@
             app:layout_constraintStart_toStartOf="@+id/tx_Job_Details"
             app:layout_constraintTop_toBottomOf="@+id/tx_Job_Role"
             app:layout_constraintVertical_bias="0.0"
-            tools:ignore="MissingConstraints" />
+             />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -336,6 +335,6 @@
         app:layout_constraintEnd_toEndOf="@+id/Job_Details_constraint"
         app:layout_constraintStart_toStartOf="@+id/Job_Details_constraint"
         app:layout_constraintTop_toBottomOf="@+id/Job_Details_constraint"
-        tools:ignore="MissingConstraints" />
+         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

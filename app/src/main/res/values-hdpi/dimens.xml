@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="medium_margin">10dp</dimen>
+    <dimen name="medium_text_size">12sp</dimen>
+    <dimen name="medium_icon_size">50dp</dimen>
+    <dimen name="xx_small_margin">2.5dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="medium_height">30dp</dimen>
+    <dimen name="small_stroke">3px</dimen>
+</resources>

@@ -2,11 +2,13 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dsffs"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Search_Activity">
+    >
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_recyclerView_employee_info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"

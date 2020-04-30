@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGraWhite"
+    tools:context=".JobDetails">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorRed"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:popupTheme="@style/AppTheme"
+        app:theme="@style/WhiteDrawerIconStyle">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Job Details"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/medium_text_size" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/public_relation_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorwhite"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <TextView
+            android:id="@+id/tv_public_relation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_margin"
+            android:text="public relation specialist"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/medium_text_size"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_kuwait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_margin"
+            android:layout_marginTop="@dimen/xx_small_margin"
+            android:text="Kuwait"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/medium_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_public_relation" />
+
+
+        <TextView
+            android:id="@+id/tx_Posted_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_margin"
+            android:layout_marginTop="4dp"
+            android:text="Posted 61 day ago"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/medium_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_kuwait" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/etisalat_logo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/medium_margin"
+            android:background="@drawable/etisalatt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".65"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent=".35" />
+
+
+        <TextView
+            android:id="@+id/tx_company_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:text="etisalat "
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/medium_text_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/etisalat_logo"
+            app:layout_constraintStart_toStartOf="@+id/etisalat_logo"
+            app:layout_constraintTop_toBottomOf="@+id/etisalat_logo" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/details_barrier"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="tx_company_name" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/button_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_margin"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:layout_marginBottom="@dimen/medium_margin"
+            android:background="@drawable/ic_favorite_black24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/details_barrier" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/Button_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_margin"
+            android:background="@drawable/ic_share_black24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/button_favorite"
+            app:layout_constraintStart_toEndOf="@+id/button_favorite"
+            app:layout_constraintTop_toTopOf="@+id/button_favorite" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Button_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/medium_height"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginTop="@dimen/xx_small_margin"
+            android:background="@drawable/my_button_bg"
+            android:text="Apply"
+            android:textAllCaps="false"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/medium_text_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/button_favorite"
+            app:layout_constraintStart_toEndOf="@+id/Button_share"
+            app:layout_constraintTop_toTopOf="@id/button_favorite" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Button_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/medium_height"
+            android:layout_marginEnd="@dimen/medium_margin"
+            android:background="@drawable/my_button_follow"
+            android:elevation="0dp"
+            android:text="Follow"
+            android:textAllCaps="false"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/medium_text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/Button_apply"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/Button_apply"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier_bottom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="public_relation_constraint" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Job_Details_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_margin"
+        android:background="@drawable/card"
+        app:layout_constraintTop_toBottomOf="@+id/barrier_bottom">
+
+        <TextView
+            android:id="@+id/tx_Job_Details"
+            style="@style/text_view_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:text="Job Details"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/medium_text_size"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tx_Years_of_Experience"
+            style="@style/text_view_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin"
+            android:text="Years of Experience"
+            android:textColor="@color/colorgray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tx_Job_Details" />
+
+        <TextView
+            android:id="@+id/tx_Years_of_Experience_result"
+            style="@style/text_view_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 - 20 "
+            android:textColor="@color/colorblack"
+            app:layout_constraintStart_toEndOf="@+id/tx_Years_of_Experience"
+            app:layout_constraintTop_toTopOf="@+id/tx_Years_of_Experience" />
+
+        <TextView
+            android:id="@+id/tx_Salary"
+            style="@style/text_view_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/xx_small_margin"
+            android:text="Salary"
+            android:textColor="@color/colorgray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tx_Years_of_Experience" />
+
+        <TextView
+            android:id="@+id/tx_Salary_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/medium_text_size"
+            app:layout_constraintStart_toStartOf="@+id/tx_Years_of_Experience_result"
+            app:layout_constraintTop_toTopOf="@+id/tx_Salary"
+            tools:text="6000 - 10000 " />
+
+        <TextView
+            android:id="@+id/tx_Employment_Type"
+            style="@style/text_view_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/xx_small_margin"
+            android:text="Employment Type"
+            android:textColor="@color/colorgray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tx_Salary" />
+
+        <TextView
+            android:id="@+id/tx_Internship_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Internship "
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/medium_text_size"
+            app:layout_constraintStart_toStartOf="@+id/tx_Salary_result"
+            app:layout_constraintTop_toTopOf="@+id/tx_Employment_Type" />
+
+
+        <TextView
+            android:id="@+id/tx_Job_description"
+            style="@style/text_view_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_margin"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:text="Job Description"
+            android:textColor="@color/colorblack"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tx_Employment_Type" />
+
+        <TextView
+            android:id="@+id/tx_Public_Relation_Specialist"
+            style="@style/text_view_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/xx_small_margin"
+            android:text="Public Relation Specialist"
+            android:textColor="@color/colorgray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tx_Job_description" />
+
+
+        <TextView
+            android:id="@+id/tx_Job_Role"
+            style="@style/text_view_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:text="Job Role"
+            android:textColor="@color/colorblack"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tx_Public_Relation_Specialist" />
+
+        <TextView
+            android:id="@+id/tx_Public_Relation_Specialist_role"
+            style="@style/text_view_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_margin"
+            android:layout_marginTop="@dimen/xx_small_margin"
+            android:layout_marginBottom="@dimen/medium_margin"
+            android:text="Public Relation Specialist"
+            android:textColor="@color/colorgray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tx_Job_Role" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_Advanced_Info"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/larg_height"
+        android:layout_margin="@dimen/medium_margin"
+        android:background="@drawable/my_button_follow"
+        android:text="Advanced Info"
+        android:textAllCaps="false"
+        android:textColor="@color/colorwhite"
+        android:textSize="@dimen/medium_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Job_Details_constraint" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

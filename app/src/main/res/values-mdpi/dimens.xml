@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="medium_margin">20dp</dimen>
-    <dimen name="medium_text_size">17sp</dimen>
-    <dimen name="medium_icon_size">100dp</dimen>
-    <dimen name="xx_small_margin">5dp</dimen>
-    <dimen name="small_margin">16dp</dimen>
-    <dimen name="medium_height">35dp</dimen>
-    <dimen name="small_stroke">5px</dimen>
+    <dimen name="medium_margin">10dp</dimen>
+    <dimen name="medium_text_size">12sp</dimen>
+    <dimen name="medium_icon_size">80dp</dimen>
+    <dimen name="xx_small_margin">2dp</dimen>
+    <dimen name="small_margin">12dp</dimen>
+    <dimen name="medium_height">25dp</dimen>
+    <dimen name="small_stroke">2px</dimen>
+    <dimen name="larg_text_size">10sp</dimen>
+    <dimen name="small_text_size">10sp</dimen>
+    <dimen name="larg_height">30dp</dimen>
 </resources>

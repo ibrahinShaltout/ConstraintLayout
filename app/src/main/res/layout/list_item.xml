@@ -65,11 +65,11 @@
         app:layout_constraintStart_toEndOf="@+id/appCompatImageView"
         app:layout_constraintTop_toBottomOf="@+id/tx_city_name_item" />
 
-    <view
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="@dimen/xx_small_margin"
-        app:layout_constraintTop_toBottomOf="@+id/tx_date_item"/>
+<!--    <view-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:layout_marginTop="@dimen/xx_small_margin"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tx_date_item"/>-->
 
     <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/button_favorite"

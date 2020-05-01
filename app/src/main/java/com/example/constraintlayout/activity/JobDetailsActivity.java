@@ -1,10 +1,12 @@
-package com.example.constraintlayout;
+package com.example.constraintlayout.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class JobDetails extends AppCompatActivity {
+import com.example.constraintlayout.R;
+
+public class JobDetailsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
